@@ -1,5 +1,6 @@
 package com.stackroute.practiseexersise2;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -20,5 +21,8 @@ public class WordFrequencyTest {
         String str=wordFrequency.readFrequencyOfWordsInFile(new File("file1.txt"));
         assertEquals(" i-2,am-2,man-1,good-1",str);
     }
-
+    @After
+    public void tearDown(){
+        wordFrequency = null;
+    }
 }

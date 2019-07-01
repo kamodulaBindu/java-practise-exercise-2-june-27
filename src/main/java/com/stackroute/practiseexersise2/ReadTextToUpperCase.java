@@ -5,21 +5,21 @@ import java.io.*;
 public class ReadTextToUpperCase {
     public static String readFile(File file) throws IOException {
         String line=" ";
-        String rev=" ";
+        String str=" ";
         int len=0;
         try{
             FileReader fr=new FileReader(file);
             BufferedReader bufferReader=new BufferedReader(fr);
             while((line=bufferReader.readLine())!=null)
             {
-                rev=rev.concat(line);
+                str=str.concat(line);
             }
-            len=rev.length();
+            len=str.length();
             bufferReader.close();;
         }
         catch (IOException e) {
             e.printStackTrace();
         }
-        return rev.toUpperCase();
+        return str.toUpperCase();
     }
 }

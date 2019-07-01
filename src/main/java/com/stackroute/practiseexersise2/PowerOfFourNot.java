@@ -2,7 +2,7 @@ package com.stackroute.practiseexersise2;
 //class to check if the number is power of four or not
 public class PowerOfFourNot {
 
-        public static String isPowerOfFour(int n)
+        public static String isPowerOfFourOrNot(int n)
         {
             if ((n==0))
                 return "0";

@@ -13,9 +13,9 @@ public class FactorialTest {
         factorial=new Factorial();
     }
     @Test
-    public void returnFactorialOfNumber(){
-        String result=factorial.factorialOfNumber(3);
-        String expectedResult="the factorial of1is1\n"+"the factorial of2is2\n"+"the factorial of3is6\n";
+    public void givenNumberTofactorialOfNumber(){
+        String result=factorial.factorialOfNumber(4);
+        String expectedResult="the factorial of1is1\n"+"the factorial of2is2\n"+"the factorial of3is6\n"+"the factorial of4is24\n";
         assertEquals(expectedResult,result);
     }
 

@@ -13,7 +13,7 @@ public class MembervariableTest {
         membervariable=new Membervariable();
     }
     @Test
-    public void givenThreeArgumentsReturnsMembersDetails(){
+    public void givenArgumentsReturnsMembersDetails(){
         String result=membervariable.printValues("Raju",21,2000.2f);
         assertEquals("Member's Name:Raju\n"+"Member's Age:21\n"+"Member's Salary:2000.2",result);
     }

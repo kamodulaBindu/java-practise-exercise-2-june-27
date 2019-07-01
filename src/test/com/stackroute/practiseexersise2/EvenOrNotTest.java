@@ -14,14 +14,19 @@ public class EvenOrNotTest {
         even=new EvenOrNot();
     }
     @Test
-    public void checkWhetherTheIntegerIsNotEven(){
-        Boolean b=even.isEven(3);
+    public void checkWhetherTheGivenIntegerIsEven(){
+        Boolean b=even.EvenOrNot(3);
         assertEquals(false,b);
     }
     @Test
-    public void checkWhetherTheIntegerIsEven(){
-        Boolean b=even.isEven(4);
+    public void checkWhetherTheGivenIntegerIsOdd(){
+        Boolean b=even.EvenOrNot(4);
         assertEquals(true,b);
+    }
+    @Test
+    public void checkWhetherTheGivenIntegerOdd(){
+        Boolean b=even.EvenOrNot(-7);
+        assertEquals(false,b);
     }
     @After
     public void tearDown(){

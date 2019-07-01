@@ -16,17 +16,24 @@ public class ReversePalindromeTest {
     }
 
     @Test
-    public void checkIfPalindrome()
+    public void checkIfReverseStringIsPalindrome()
     {
         actualresult=reversePalindrome.reversePalindrome("hd7kehd09wn");
         expectedresult = "String is not a palindrome";
         assertEquals(expectedresult,actualresult);
     }
     @Test
-    public void checkIfPalindromeOrNot()
+    public void checkIfReverseStringIsPalindromeOrNot()
     {
         actualresult= reversePalindrome.reversePalindrome("chdgy070ygdhc");
         expectedresult="String is a palindrome";
+        assertEquals(expectedresult,actualresult);
+    }
+    @Test
+    public void checkReverseStringIsPalindromeOrNot()
+    {
+        actualresult= reversePalindrome.reversePalindrome("*(&^%$^&*(&*(*");
+        expectedresult="String is not a palindrome";
         assertEquals(expectedresult,actualresult);
     }
     @After
