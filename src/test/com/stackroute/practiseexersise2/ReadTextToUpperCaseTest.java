@@ -10,13 +10,13 @@ import java.io.PrintWriter;
 
 import static org.junit.Assert.*;
 
-public class ReadTextFileTest {
-    ReadTextFile file2;
+public class ReadTextToUpperCaseTest {
+    ReadTextToUpperCase file2;
     PrintWriter actualResult;
     String expectedResult;
     @Before
     public void setup(){
-        file2=new ReadTextFile();
+        file2=new ReadTextToUpperCase();
     }
     @Test
     public void readFileAndConveretToUpperCase() throws IOException {

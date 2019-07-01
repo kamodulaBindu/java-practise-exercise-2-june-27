@@ -6,12 +6,12 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class EvenTestTest {
-    EvenTest even;
+public class EvenOrNotTest {
+    EvenOrNot even;
     @Before
     public void setUp()
     {
-        even=new EvenTest();
+        even=new EvenOrNot();
     }
     @Test
     public void checkWhetherTheIntegerIsNotEven(){
