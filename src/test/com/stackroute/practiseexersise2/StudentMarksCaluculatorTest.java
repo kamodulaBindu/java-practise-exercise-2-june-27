@@ -16,7 +16,7 @@ public class StudentMarksCaluculatorTest {
         studentMarksCaluculator=new StudentMarksCaluculator();
     }
     @Test
-    public void checkForStudentsMarks(){
+    public void givenArrayMustReturnAverageMaxAndMinGradesOfStudents(){
         int students=4;
         int[] marks = {10,20,30,40};
         actualResult=studentMarksCaluculator.getAverage(students,marks);
@@ -33,7 +33,7 @@ public class StudentMarksCaluculatorTest {
         assertEquals(expectedResult,actualResult);
     }
     @Test
-    public void checkForStudentGrades(){
+    public void givenMarksArrayMustReturnAverageMaxMinGradesOfStudents(){
         int students=6;
         int[] marks = {30,40,58,76,32,74};
         actualResult=studentMarksCaluculator.getAverage(students,marks);
@@ -50,7 +50,7 @@ public class StudentMarksCaluculatorTest {
         assertEquals(expectedResult,actualResult);
     }
     @Test
-    public void checkForGradesOfStudents(){
+    public void givenMarksOfStudentsMustReturnAverageMaxAndMinGrades(){
         int students=10;
         int[] marks = {76,90,52,12,76,34,72,20,83,49};
         actualResult=studentMarksCaluculator.getAverage(students,marks);

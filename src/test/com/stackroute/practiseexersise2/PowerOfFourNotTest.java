@@ -15,15 +15,21 @@ public class PowerOfFourNotTest {
         obj=new PowerOfFourNot();
     }
     @Test
-    public void givenNumberPowerOfFourOrNot(){
+    public void givenNumberMustReturnPowerOfFour(){
         actualResult=obj.isPowerOfFourOrNot(64);
         expectedResult="it is power of 4";
         assertEquals(expectedResult,actualResult);
     }
     @Test
-    public void givenIntegerPowerOfFourOrNot1(){
+    public void checkWhetherTheNumberIsPowerOfFourOrNot(){
         actualResult=obj.isPowerOfFourOrNot(6);
         expectedResult="it is not a power of 4";
+        assertEquals(expectedResult,actualResult);
+    }
+    @Test
+    public void checkIfGivenNumberIsPowerOfFour(){
+        actualResult=obj.isPowerOfFourOrNot(0);
+        expectedResult="0";
         assertEquals(expectedResult,actualResult);
     }
 

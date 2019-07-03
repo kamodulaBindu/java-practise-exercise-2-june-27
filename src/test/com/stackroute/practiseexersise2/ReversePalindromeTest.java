@@ -16,16 +16,16 @@ public class ReversePalindromeTest {
     }
 
     @Test
-    public void checkIfReverseStringIsPalindrome()
+    public void givenStringmustReturnReverseOfStringAndCheckIfPalindrome()
     {
-        actualresult=reversePalindrome.reversePalindrome("hd7kehd09wn");
+        actualresult=reversePalindrome.reversePalindrome("happy");
         expectedresult = "String is not a palindrome";
         assertEquals(expectedresult,actualresult);
     }
     @Test
     public void checkIfReverseStringIsPalindromeOrNot()
     {
-        actualresult= reversePalindrome.reversePalindrome("chdgy070ygdhc");
+        actualresult= reversePalindrome.reversePalindrome("");
         expectedresult="String is a palindrome";
         assertEquals(expectedresult,actualresult);
     }

@@ -17,9 +17,15 @@ public class MembervariableTest {
         String result=membervariable.printValues("Raju",21,2000.2f);
         assertEquals("Member's Name:Raju\n"+"Member's Age:21\n"+"Member's Salary:2000.2",result);
     }
-    @After
-    public void tearDown(){
-        membervariable=null;
+    @Test
+    public void givenArgumentsReturnsMembersDetailsOfEmployee(){
+        String result=membervariable.printValues("Krishna",25,5000.2f);
+        assertEquals("Member's Name:Krishna\n"+"Member's Age:25\n"+"Member's Salary:5000.2",result);
     }
 
+    @After
+    public void tearDown(){
+
+        membervariable=null;
+    }
 }

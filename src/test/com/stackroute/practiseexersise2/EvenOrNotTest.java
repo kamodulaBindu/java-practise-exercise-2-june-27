@@ -14,12 +14,12 @@ public class EvenOrNotTest {
         even=new EvenOrNot();
     }
     @Test
-    public void checkWhetherTheGivenIntegerIsEven(){
+    public void givenIntegerNumberShouldReturnFalseIfOdd(){
         Boolean b=even.EvenOrNot(3);
         assertEquals(false,b);
     }
     @Test
-    public void checkWhetherTheGivenIntegerIsOdd(){
+    public void givenIntegerNumberShouldReturnTrueIfEven(){
         Boolean b=even.EvenOrNot(4);
         assertEquals(true,b);
     }
